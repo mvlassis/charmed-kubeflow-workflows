@@ -39,6 +39,7 @@ jobs:
         uses: mvlassis/backport-action@add-all-reviewers-input
         with:
           copy_assignees: true
+          copy_all_reviewers: true
           copy_requested_reviewers: true
           pull_title: "${pull_title} (backport #${pull_number})"
           github_token: ${{ secrets.GH_TOKEN }}
